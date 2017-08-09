@@ -1,0 +1,77 @@
+<div id="main" infinite-load="" pagination-request="storyCtrl.loadStories()" disable-pagination=" storyCtrl.stopLoading">
+        
+            <div id="stories" class="container-fluid nopadding">
+                <div class="row ">
+                    <div class="col-md-12 col-sm-12 col-xs-12 lead-story">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="{{storyCtrl.imageP}}" />
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="author col-md-12 col-sm-12 col-xs-12">
+
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <label ng-bind="storyCtrl.leadStory.sections[0]['display-name']"></label>
+                                    </li>
+                                    <li><p class="heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p></li>
+
+                                    <li>
+                                    <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore                                    magna aliqua. </p>
+
+                                    </li>
+
+                                    <li>
+                                        <div class="author col-md-12 col-sm-12 col-xs-12">
+                                            <div class="author-image pull-left"></div>
+                                            <div id="author-details" class="col-md-8 col-sm-8 col-xs-8">
+                                                <quote>{{storyCtrl.leadStory['author-name']}}</quote>
+                                                <br>
+                                                <quote>Posted 15 min ago</quote>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+                    
+                    </div>
+                    
+                    
+                    <div class="col-md-12 sec-first">
+                        <h3>Quick Feed</h3>
+                        <div ng-repeat="st in storyCtrl.storiesCut" class="col-md-3 col-sm-3 col-xs-12 news-short nopadding">
+                            <img class="w-100" ng-src="{{storyCtrl.getImageSource(st['hero-image-s3-key'])}}">
+                            <label>{{st.headline}}</label>
+                            <p>{{st['author-name']}}</p>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="col-md-12 sec-first story-rest">
+                        <h3>Recent</h3>
+                        <div ng-repeat="st in storyCtrl.storiesRest" class="col-md-12 col-sm-12 col-xs-12 ">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <img style="height:130px" class="w-100" ng-src="{{storyCtrl.getImageSource(st['hero-image-s3-key'])}}">
+                            </div>
+                           
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <label>{{st.headline}}</label>
+                                <p >{{st['author-name']}}</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                </div>
+                
+            
+            </div>
+        
+</div>
+
+ <div class="loading hide">
+            <img src="/webcontent/img/loading.gif"/>
+        </div>

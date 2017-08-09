@@ -1,0 +1,156 @@
+/*************stories*************/
+
+@media (min-width:768px){
+    .lead-story{
+    
+    background-color: #f7f7f7;
+    
+        
+    }
+
+}
+
+@media (min-width:768px){
+  
+    .lead-story{
+        padding-right:0 !important;
+/*        margin:30px 15px 0 15px !important;*/
+    }
+
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 0;
+    border: 0;
+}
+
+.nopadding{
+    padding:0 !important;
+    margin: 0 !important;
+}
+
+
+#stories{
+   
+   
+    background-color: #f4f4f4;
+    
+}
+
+
+.lead-story{
+/*    height:350px;*/
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+     background-color: white;
+    box-shadow: 1px 1px 0px 1px #ebebeb;
+    margin-bottom:20px !important;
+    
+   
+}
+.lead-story div{
+    margin-right:0 !important;
+    padding-left: 10px !important;
+}
+.lead-story img,.lead-story>div:nth-child(1){
+    height:350px;
+    width:100%;
+     padding-left: 0 !important;
+}
+
+.lead-stroy label{
+   margin-top:30px;
+    font-size: 17px;
+}
+.row{
+    margin-bottom:25px !important;
+}
+
+.sec-first label, .sec-rest label{
+    margin-top: 10px;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+ p{
+    font-weight:300px;
+    font-size: 17px;
+}
+.lead-story .heading{
+    font-weight: 600px;
+    font-size: 23px;
+}
+
+.author{
+     background-color: transparent;
+    padding: 20px;
+    padding-left: 0 !important;
+    
+}
+.author #author-details{
+    margin-right: 10px;
+    font-size: 10px;
+    font-color : grey;
+    
+}
+
+.author #author-details , .author #author-details>quote:nth-child(1){
+    font-size: 12px;
+    
+}
+.author-image{
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    
+}
+
+.sec-first{
+/*
+       margin-left: 15px !important;
+    margin-right: 15px !important;
+      
+   
+*/
+    
+}
+
+h3{
+    margin-left:10px;
+}
+.news-short{
+    background-color: white;
+    margin-right: 10px !important;
+    box-shadow: 1px 1px 1px gainsboro;
+    height: 276px;
+    position: relative;
+    margin-left: 10px !important;
+    margin-bottom: 10px !important
+    
+}
+.news-short p{
+   position: absolute;
+    bottom: 10;
+    font-size: 12px;
+    color: grey;
+    margin-left: 10px;
+}
+
+.story-rest p{
+    font-size: 10px;
+    color:grey;
+    margin-left: 10px
+}
+.story-rest>div{
+    margin-bottom: 20px
+}
+
+.news-short img{
+    height: 170px;
+     background-color: white;
+}
+.story-rest div{
+    margin-left:-9px !important;
+}

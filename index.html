@@ -1,0 +1,89 @@
+<html>
+
+
+    <head>
+        <link rel="stylesheet" href="ext/bootstrap.css"/>
+        <link rel="stylesheet" href="core/css/storiesPage.css"/>
+         <link rel="stylesheet" href="core/css/stories.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="ext/angular.min.js"></script>
+        <script src="ext/angular-ui-router.js"></script>
+        <script src="core/app.js"></script>
+        <script src="core/common/restService.js"></script>
+        <script src="core/common/storyConstants.js"></script>
+        <script src="core/services/storyFactory.js"></script>
+        <script src="core/directives/reusable.js"></script>
+        <script src="core/controllers/storiesController.js"></script>
+        
+    
+    </head>
+    
+    <body ng-app="storyApp">
+        <div data-ng-controller="mainController">
+        
+            <header class="navbar-st navbar-wrapper navbar-static">
+            <div class="container-fluid nav-div">
+            
+                <div class="row">
+                
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        
+                       <button class="menu-ham ">&#9776;</button>
+                        <label class="inline">QuinType</label>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <button class="search-st glyphicon glyphicon-search float-right"></button>
+                    </div>
+                
+                </div>
+            </div>
+        
+            </header>
+
+            <ui-view>
+            
+            
+            </ui-view>
+
+
+
+            <footer class="footer">
+                <nav class="navbar">
+                    <ul class="list-inline">
+                      <li>
+                        <span  href="#">Terms & Conditions</span>
+                      </li>
+                      <li >
+                        <span  href="#">Privacy Policy&nbsp;|</span>
+                      </li>
+                      <li >
+                        <span class="" href="#">About us &nbsp;|</span>
+                      </li>
+                    </ul>
+                    <ul class="list-inline">
+                      <li>
+                        <span  href="#">Copyright 2016</span>
+                      </li>
+                      
+                    </ul>
+                    <ul class="list-inline">
+                      <li>
+                        <span  href="#">Powered by QuinType</span>
+                      </li>
+                      
+                    </ul>
+                
+                </nav>
+            </footer>
+        </div>
+        
+        
+       
+        
+    </body>
+
+
+
+</html>
