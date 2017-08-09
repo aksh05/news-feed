@@ -1,5 +1,5 @@
 # news-feed
-This app let people be updated on lates news.
+This app let people be updated on the latest news.
 
 #Following are the technologies uses:
 -The app is built by using bootstrap and the CSS methodolgy used is ACSS
