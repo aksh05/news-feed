@@ -2,8 +2,8 @@
 This app let people be updated on lates news.
 
 #Following are the technologies uses:
--The app is built bu using bootstrap and the CSS methodolgy used is ACSS
--Angularjs is used as the javscript framework where in view, model and controller is seperated. Controller makes use of factories and services to fetch stories.
+-The app is built by using bootstrap and the CSS methodolgy used is ACSS
+-Angularjs is used as the javscript framework wherein view, model and controller is seperated. Controller makes use of factories and services to fetch stories.
 -Angularjs is used as it provides a simpler and efficient way to build single page application.
  
 #Following are the items which are left off
